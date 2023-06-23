@@ -30,6 +30,7 @@ jobs:
         --no-incremental
         --verbosity diagnostic
         /p:ErrorLog=${{ github.workspace }}/csharp-compiler.sarif%3bversion=2.1
+#       /p:PreferredUILang=en-US
 
     - uses: github/codeql-action/upload-sarif@v2
       with:
